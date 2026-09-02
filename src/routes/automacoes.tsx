@@ -146,10 +146,12 @@ const sourceFields = [
   "Empresa vinda do formulário",
 ];
 
+const pick = (i: number): Palette => palette[i]!;
+
 const initial: Block[] = [
-  { ...palette[0], id: "b1" },
-  { ...palette[2], id: "b2" },
-  { ...palette[3], id: "b3" },
+  { ...pick(0), id: "b1" },
+  { ...pick(2), id: "b2" },
+  { ...pick(3), id: "b3" },
 ];
 
 let counter = 100;
@@ -371,7 +373,7 @@ function AutomationBuilder() {
                 <div className="mt-6 flex justify-center">
                   <button
                     type="button"
-                    onClick={() => addBlock(palette[4])}
+                    onClick={() => addBlock(pick(4))}
                     className="inline-flex items-center gap-2 rounded-xl border border-dashed border-brand/40 bg-card px-4 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-brand/5"
                   >
                     <Plus className="size-4" />
