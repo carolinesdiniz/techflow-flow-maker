@@ -50,12 +50,6 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <a
-            href="#precos"
-            className="rounded-xl px-4 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
-          >
-            Entrar
-          </a>
           <a href="#teste" className="btn-primary text-sm">
             Testar Gratuitamente
           </a>
@@ -86,13 +80,6 @@ export function Navbar() {
             ))}
           </nav>
           <div className="mt-4 flex flex-col gap-2">
-            <a
-              href="#precos"
-              onClick={() => setOpen(false)}
-              className="rounded-xl border border-border py-3 text-center text-sm font-semibold text-foreground"
-            >
-              Entrar
-            </a>
             <a
               href="#teste"
               onClick={() => setOpen(false)}
