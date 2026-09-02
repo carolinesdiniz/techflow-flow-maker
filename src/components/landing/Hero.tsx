@@ -118,7 +118,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="absolute -bottom-5 -left-3 hidden rounded-2xl border border-border bg-card px-4 py-3 shadow-soft sm:block">
+            <div className="absolute -bottom-9 -left-4 hidden rounded-2xl border border-border bg-card px-4 py-3 shadow-soft lg:block">
               <p className="text-[11px] font-medium text-muted-foreground">Tempo de implantação</p>
               <p className="text-lg font-bold text-foreground">2 horas</p>
             </div>
