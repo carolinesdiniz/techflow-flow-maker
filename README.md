@@ -29,3 +29,37 @@ Além disso, muitas soluções de automação existentes possuem interfaces comp
 ## 💡 Solução
 
 O TechFlow permite que usuários criem automações através de um editor visual:
+
+---
+
+# 🚀 Funcionalidades
+
+## Automações visuais
+
+- Criação de workflows utilizando blocos;
+- Sistema de gatilhos e ações;
+- Conexão entre etapas através de fluxo visual;
+- Teste e execução das automações.
+
+## Integrações
+
+Integrações planejadas:
+
+- 📊 Google Sheets
+- 📈 Microsoft Excel
+- ✉️ Gmail / Outlook
+- 💬 WhatsApp
+- 📋 Google Forms
+- 👥 CRMs populares
+- 🏢 ERPs
+- 🗄 Bancos de dados
+- 🔗 APIs via HTTP e Webhooks
+
+# 🖥️ Interface
+
+A plataforma possui uma experiência focada em usuários não técnicos:
+
+- Editor visual drag-and-drop;
+- Configuração através de formulários;
+- Linguagem simples;
+
