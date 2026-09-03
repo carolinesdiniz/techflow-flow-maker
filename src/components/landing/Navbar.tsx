@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Workflow } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const links = [
   { label: "Soluções", href: "#solucoes" },
