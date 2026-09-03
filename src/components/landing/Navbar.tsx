@@ -65,8 +65,10 @@ export function Navbar() {
           className="grid size-10 shrink-0 place-items-center rounded-xl border border-border text-foreground lg:hidden"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+          </button>
+        </div>
       </div>
+
 
       {open && (
         <div className="border-t border-border bg-background px-5 pb-5 pt-3 lg:hidden">
