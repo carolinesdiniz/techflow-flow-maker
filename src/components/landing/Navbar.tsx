@@ -50,11 +50,14 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
+          <ThemeToggle />
           <a href="#teste" className="btn-primary text-sm">
             Testar Gratuitamente
           </a>
         </div>
 
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
         <button
           type="button"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
