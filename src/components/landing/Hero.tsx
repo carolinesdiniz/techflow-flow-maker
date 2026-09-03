@@ -1,4 +1,5 @@
 import { ArrowRight, PlayCircle, FileSpreadsheet, Filter, Mail, Database, Sparkles } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Reveal } from "./Reveal";
 
 const blocks = [
@@ -33,10 +34,10 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#teste" className="btn-primary justify-center text-base">
+            <Link to="/automacoes" className="btn-primary justify-center text-base">
               Criar Fluxo Grátis
               <ArrowRight className="size-4.5" />
-            </a>
+            </Link>
             <a href="#solucoes" className="btn-secondary justify-center text-base">
               <PlayCircle className="size-5" />
               Ver Demonstração em Vídeo
