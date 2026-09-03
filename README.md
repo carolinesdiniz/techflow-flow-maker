@@ -61,5 +61,5 @@ A plataforma possui uma experiência focada em usuários não técnicos:
 
 - Editor visual drag-and-drop;
 - Configuração através de formulários;
-- Linguagem simples;
+- Linguagem simples.
 
