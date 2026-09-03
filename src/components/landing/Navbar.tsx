@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Workflow } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const links = [
   { label: "Soluções", href: "#solucoes" },
@@ -50,11 +51,14 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
+          <ThemeToggle />
           <a href="#teste" className="btn-primary text-sm">
             Testar Gratuitamente
           </a>
         </div>
 
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
         <button
           type="button"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
@@ -62,8 +66,10 @@ export function Navbar() {
           className="grid size-10 shrink-0 place-items-center rounded-xl border border-border text-foreground lg:hidden"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+          </button>
+        </div>
       </div>
+
 
       {open && (
         <div className="border-t border-border bg-background px-5 pb-5 pt-3 lg:hidden">

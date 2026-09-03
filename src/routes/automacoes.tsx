@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   ClipboardList,
   FileSpreadsheet,
@@ -215,6 +216,7 @@ function AutomationBuilder() {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
+            <ThemeToggle />
             <button type="button" className="btn-secondary px-4 py-2.5 text-sm">
               <Save className="size-4" />
               Salvar
