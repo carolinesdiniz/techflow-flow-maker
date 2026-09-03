@@ -1,4 +1,5 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Reveal } from "./Reveal";
 
 export function FinalCta() {
@@ -16,13 +17,13 @@ export function FinalCta() {
               ajuste os blocos e devolva horas de trabalho para a sua equipe.
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-              <a
-                href="#topo"
+              <Link
+                to="/automacoes"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-background px-6 py-3.5 text-base font-bold text-foreground shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-elevated active:translate-y-0 active:scale-[0.98]"
               >
                 Criar Fluxo Grátis
                 <ArrowRight className="size-4.5" />
-              </a>
+              </Link>
               <a
                 href="#topo"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-primary-foreground/35 px-6 py-3.5 text-base font-semibold text-primary-foreground transition-all duration-200 hover:bg-primary-foreground/10 active:scale-[0.98]"
