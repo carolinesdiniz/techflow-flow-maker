@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   ClipboardList,
   FileSpreadsheet,
