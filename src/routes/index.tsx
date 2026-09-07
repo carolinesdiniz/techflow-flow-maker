@@ -3,7 +3,7 @@ import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { PainSolution } from "@/components/landing/PainSolution";
 import { Differentials } from "@/components/landing/Differentials";
-import { Metrics } from "@/components/landing/Metrics";
+import { Integrations } from "@/components/landing/Integrations";
 import { Comparison } from "@/components/landing/Comparison";
 import { Faq } from "@/components/landing/Faq";
 import { FinalCta } from "@/components/landing/FinalCta";
@@ -35,7 +35,7 @@ function Index() {
         <Hero />
         <PainSolution />
         <Differentials />
-        <Metrics />
+        <Integrations />
         <Comparison />
         <Faq />
         <FinalCta />
