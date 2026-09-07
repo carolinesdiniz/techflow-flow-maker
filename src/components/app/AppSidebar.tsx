@@ -1,4 +1,6 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/autoflow-logo.png.asset.json";
+
 import {
   LayoutDashboard,
   Workflow,
