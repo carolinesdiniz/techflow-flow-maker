@@ -9,7 +9,7 @@ import { Faq } from "@/components/landing/Faq";
 import { FinalCta } from "@/components/landing/FinalCta";
 import { Footer } from "@/components/landing/Footer";
 
-const title = "TechFlow — Automação de processos sem código para PMEs";
+const title = "AutoFlow — Automação de processos sem código para PMEs";
 const description =
   "Automatize tarefas manuais repetitivas com blocos de arrastar e soltar. Templates por indústria, suporte no WhatsApp e até 70% mais barato que Zapier e Make.";
 

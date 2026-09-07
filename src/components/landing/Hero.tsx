@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A TechFlow devolve horas ao seu time automatizando tarefas repetitivas em uma
+            A AutoFlow devolve horas ao seu time automatizando tarefas repetitivas em uma
             plataforma visual de arrastar e soltar. Sem código, sem agência: você conecta
             planilhas, e-mails e sistemas e coloca o fluxo no ar em poucas horas.
           </p>

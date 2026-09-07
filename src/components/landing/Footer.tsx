@@ -11,7 +11,7 @@ const columns = [
   },
   {
     title: "Empresa",
-    links: ["Sobre a TechFlow", "Comunidade", "Parceiros", "Trabalhe com a gente"],
+    links: ["Sobre a AutoFlow", "Comunidade", "Parceiros", "Trabalhe com a gente"],
   },
   {
     title: "Suporte",
@@ -76,14 +76,14 @@ export function Footer() {
 
         <div className="mt-14 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-t border-border pt-7 sm:flex sm:justify-between">
           <p className="min-w-0 text-xs text-muted-foreground">
-            © {new Date().getFullYear()} TechFlow Tecnologia LTDA · Todos os direitos reservados
+            © {new Date().getFullYear()} AutoFlow Tecnologia LTDA · Todos os direitos reservados
           </p>
           <div className="flex shrink-0 items-center gap-2">
             {[Instagram, Linkedin, Youtube].map((Icon, i) => (
               <a
                 key={i}
                 href="#topo"
-                aria-label="Rede social da TechFlow"
+                aria-label="Rede social da AutoFlow"
                 className="grid size-9 place-items-center rounded-xl border border-border text-muted-foreground transition-colors hover:border-brand/40 hover:text-brand"
               >
                 <Icon className="size-4" />

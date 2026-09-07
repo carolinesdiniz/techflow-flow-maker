@@ -1,4 +1,4 @@
-# ⚡ TechFlow - Plataforma de Automação No-Code
+# ⚡ AutoFlow - Plataforma de Automação No-Code
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
@@ -28,7 +28,7 @@ Além disso, muitas soluções de automação existentes possuem interfaces comp
 
 ## 💡 Solução
 
-O TechFlow permite que usuários criem automações através de um editor visual:
+O AutoFlow permite que usuários criem automações através de um editor visual:
 
 ---
 

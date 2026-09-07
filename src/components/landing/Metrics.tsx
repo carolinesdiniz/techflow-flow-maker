@@ -62,7 +62,7 @@ export function Metrics() {
           </h2>
           <p className="mt-4 text-base text-muted-foreground sm:text-lg">
             Desde 2021, empresas de contabilidade, imóveis, comércio e serviços rodam suas
-            operações na TechFlow e compartilham fluxos na nossa comunidade.
+            operações na AutoFlow e compartilham fluxos na nossa comunidade.
           </p>
         </Reveal>
 

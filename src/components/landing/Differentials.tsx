@@ -5,7 +5,7 @@ const cards = [
   {
     icon: MousePointerClick,
     title: "Interface visual intuitiva",
-    text: "Blocos de arrastar e soltar desenhados para quem não programa. Se você sabe desenhar o processo em um papel, sabe automatizar na TechFlow.",
+    text: "Blocos de arrastar e soltar desenhados para quem não programa. Se você sabe desenhar o processo em um papel, sabe automatizar na AutoFlow.",
   },
   {
     icon: LayoutTemplate,
