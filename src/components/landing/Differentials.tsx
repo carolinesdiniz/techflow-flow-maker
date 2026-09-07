@@ -31,7 +31,7 @@ export function Differentials() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand">Diferenciais</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            Feita para a operação brasileira, não traduzida para ela
+            Feita por quem entende o dia a dia do mercado brasileiro.
           </h2>
         </Reveal>
 

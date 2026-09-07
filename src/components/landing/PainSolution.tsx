@@ -2,7 +2,7 @@ import { Check, X } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const pains = [
-  "Até 60% do expediente da equipe gasto em entrada de dados, e-mails e relatórios manuais",
+  "Pesquisa pela OnePoll constatou que os profissionais que atuam na área administrativa passam, em média, mais de três horas por dia realizando tarefas manuais e repetitivas no computador e que atrapalha na realização do seus trabalhos principais.",
   "Erros humanos que custam retrabalho, clientes e credibilidade",
   "Ferramentas globais cobrando mais de R$ 5 mil por mês e em inglês",
   "Orçamentos de agência de dezenas de milhares de reais para um bot simples",
