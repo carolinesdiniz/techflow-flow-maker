@@ -1,4 +1,6 @@
-import { Workflow, ShieldCheck, Lock, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
+import { ShieldCheck, Lock, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
+import logo from "@/assets/autoflow-logo.png.asset.json";
+
 
 const columns = [
   {
@@ -25,14 +27,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
-            <div className="flex items-center gap-2.5">
-              <span className="grid size-9 place-items-center rounded-xl bg-gradient-brand text-primary-foreground">
-                <Workflow className="size-5" strokeWidth={2.4} />
-              </span>
-              <span className="text-lg font-bold tracking-tight text-foreground">
-                Tech<span className="text-brand">Flow</span>
-              </span>
+            <div className="flex items-center">
+              <img
+                src={logo.url}
+                alt="AutoFlow"
+                className="h-10 w-auto rounded-xl bg-brand-deep px-2 py-1"
+              />
             </div>
+
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Plataforma brasileira de automação de processos sem código. Automatize em horas o
               que levaria semanas com desenvolvedores.
