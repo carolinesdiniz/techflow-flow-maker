@@ -1,4 +1,4 @@
-import { ArrowRight, PlayCircle, FileSpreadsheet, Filter, Mail, Database, Sparkles } from "lucide-react";
+import { ArrowRight, FileSpreadsheet, Filter, Mail, Database, Sparkles } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "./Reveal";
 
@@ -33,16 +33,14 @@ export function Hero() {
             planilhas, e-mails e sistemas e coloca o fluxo no ar em poucas horas.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
             <Link to="/automacoes" className="btn-primary justify-center text-base">
               Criar Fluxo Grátis
               <ArrowRight className="size-4.5" />
             </Link>
-            <a href="#solucoes" className="btn-secondary justify-center text-base">
-              <PlayCircle className="size-5" />
-              Ver Demonstração em Vídeo
-            </a>
+            <span className="text-sm font-semibold text-brand">14 dias grátis sem cartão</span>
           </div>
+
 
           <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
