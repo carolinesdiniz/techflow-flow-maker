@@ -41,27 +41,10 @@ export function Hero() {
             <span className="text-sm font-semibold text-brand">14 dias grátis sem cartão</span>
           </div>
 
+          <p className="mt-9 text-sm text-muted-foreground">
+            Cancele quando quiser · suporte em português no WhatsApp
+          </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <span className="flex -space-x-2">
-                {["A", "M", "R", "J"].map((i) => (
-                  <span
-                    key={i}
-                    className="grid size-7 place-items-center rounded-full border-2 border-background bg-secondary text-[11px] font-bold text-secondary-foreground"
-                  >
-                    {i}
-                  </span>
-                ))}
-              </span>
-              <span>
-                <strong className="font-semibold text-foreground">+80 empresas</strong>{" "}
-                brasileiras automatizando
-              </span>
-            </div>
-            <span className="hidden h-4 w-px bg-border sm:block" />
-            <span>14 dias grátis · sem cartão</span>
-          </div>
         </Reveal>
 
         <Reveal delay={150}>
