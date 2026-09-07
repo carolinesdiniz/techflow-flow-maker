@@ -2,7 +2,7 @@ import { Check, X } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const pains = [
-  "Até 60% do expediente da equipe gasto em entrada de dados, e-mails e relatórios manuais",
+  "Pesquisa pela OnePoll constatou que os profissionais que atuam na área administrativa passam, em média, mais de três horas por dia realizando tarefas manuais e repetitivas no computador e que atrapalha na realização do seus trabalhos principais.",
   "Erros humanos que custam retrabalho, clientes e credibilidade",
   "Ferramentas globais cobrando mais de R$ 5 mil por mês e em inglês",
   "Orçamentos de agência de dezenas de milhares de reais para um bot simples",
@@ -24,7 +24,7 @@ export function PainSolution() {
             O problema não é a sua equipe. É o processo manual.
           </h2>
           <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-            Veja o antes e o depois de quem coloca a operação para rodar sozinha com a TechFlow.
+            Veja o antes e o depois de quem coloca a operação para rodar sozinha com a AutoFlow.
           </p>
         </Reveal>
 
@@ -54,7 +54,7 @@ export function PainSolution() {
             <div className="relative h-full overflow-hidden rounded-3xl border border-brand/25 bg-card p-7 shadow-elevated sm:p-9">
               <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-brand" />
               <span className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand">
-                Com a TechFlow
+                Com a AutoFlow
               </span>
               <h3 className="mt-5 text-xl font-bold text-foreground">
                 Automação visual que roda sozinha

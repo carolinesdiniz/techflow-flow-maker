@@ -1,4 +1,6 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/autoflow-logo.png.asset.json";
+
 import {
   LayoutDashboard,
   Workflow,
@@ -23,14 +25,14 @@ const items = [
 export function AppSidebar() {
   return (
     <aside className="hidden w-64 shrink-0 flex-col border-r border-border bg-sidebar lg:flex">
-      <Link to="/" className="flex items-center gap-2.5 px-5 py-5">
-        <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-gradient-brand text-primary-foreground shadow-glow">
-          <Workflow className="size-5" strokeWidth={2.4} />
-        </span>
-        <span className="text-lg font-bold tracking-tight text-sidebar-foreground">
-          Tech<span className="text-brand">Flow</span>
-        </span>
+      <Link to="/" className="flex items-center px-5 py-5" aria-label="AutoFlow">
+        <img
+          src={logo.url}
+          alt="AutoFlow"
+          className="h-10 w-auto rounded-xl bg-brand-deep px-2 py-1"
+        />
       </Link>
+
 
       <nav className="flex flex-1 flex-col gap-1 px-3 py-2">
         {items.map((item) => (

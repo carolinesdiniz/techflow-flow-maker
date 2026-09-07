@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 const faqs = [
   {
     q: "Preciso saber programar?",
-    a: "Não. A TechFlow foi criada justamente para quem não programa: você monta o fluxo arrastando blocos de gatilhos, condições e ações. Quem conhece o processo da empresa consegue automatizar sem depender do time técnico.",
+    a: "Não. A AutoFlow foi criada justamente para quem não programa: você monta o fluxo arrastando blocos de gatilhos, condições e ações. Quem conhece o processo da empresa consegue automatizar sem depender do time técnico.",
   },
   {
     q: "Como funciona o suporte via WhatsApp?",

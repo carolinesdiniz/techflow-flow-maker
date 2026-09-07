@@ -1,4 +1,4 @@
-import { ArrowRight, PlayCircle, FileSpreadsheet, Filter, Mail, Database, Sparkles } from "lucide-react";
+import { ArrowRight, FileSpreadsheet, Filter, Mail, Database, Sparkles } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "./Reveal";
 
@@ -28,42 +28,23 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A TechFlow devolve horas ao seu time automatizando tarefas repetitivas em uma
+            A AutoFlow devolve horas ao seu time automatizando tarefas repetitivas em uma
             plataforma visual de arrastar e soltar. Sem código, sem agência: você conecta
             planilhas, e-mails e sistemas e coloca o fluxo no ar em poucas horas.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
             <Link to="/automacoes" className="btn-primary justify-center text-base">
               Criar Fluxo Grátis
               <ArrowRight className="size-4.5" />
             </Link>
-            <a href="#solucoes" className="btn-secondary justify-center text-base">
-              <PlayCircle className="size-5" />
-              Ver Demonstração em Vídeo
-            </a>
+            <span className="text-sm font-semibold text-brand">14 dias grátis sem cartão</span>
           </div>
 
-          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <span className="flex -space-x-2">
-                {["A", "M", "R", "J"].map((i) => (
-                  <span
-                    key={i}
-                    className="grid size-7 place-items-center rounded-full border-2 border-background bg-secondary text-[11px] font-bold text-secondary-foreground"
-                  >
-                    {i}
-                  </span>
-                ))}
-              </span>
-              <span>
-                <strong className="font-semibold text-foreground">+80 empresas</strong>{" "}
-                brasileiras automatizando
-              </span>
-            </div>
-            <span className="hidden h-4 w-px bg-border sm:block" />
-            <span>14 dias grátis · sem cartão</span>
-          </div>
+          <p className="mt-9 text-sm text-muted-foreground">
+            Cancele quando quiser · suporte em português no WhatsApp
+          </p>
+
         </Reveal>
 
         <Reveal delay={150}>

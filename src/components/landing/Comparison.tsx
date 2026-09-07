@@ -28,7 +28,7 @@ const criteria = [
 ];
 
 const columns = [
-  { key: "techflow" as const, title: "TechFlow", highlight: true },
+  { key: "techflow" as const, title: "AutoFlow", highlight: true },
   { key: "global" as const, title: "Zapier / Make", highlight: false },
   { key: "custom" as const, title: "Dev customizado", highlight: false },
 ];
@@ -40,7 +40,7 @@ export function Comparison() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand">Comparativo</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            TechFlow x soluções tradicionais
+            AutoFlow x soluções tradicionais
           </h2>
         </Reveal>
 

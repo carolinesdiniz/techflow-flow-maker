@@ -22,9 +22,9 @@ import {
 } from "lucide-react";
 import { AppSidebar } from "@/components/app/AppSidebar";
 
-const title = "Editor de automações — TechFlow";
+const title = "Editor de automações — AutoFlow";
 const description =
-  "Crie e gerencie automações no-code na TechFlow: conecte formulários, Google Sheets, WhatsApp, e-mail, CRMs e APIs em um editor visual de arrastar e soltar.";
+  "Crie e gerencie automações no-code na AutoFlow: conecte formulários, Google Sheets, WhatsApp, e-mail, CRMs e APIs em um editor visual de arrastar e soltar.";
 
 export const Route = createFileRoute("/automacoes")({
   head: () => ({
