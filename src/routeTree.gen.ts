@@ -10,11 +10,22 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AplicativosRouteImport } from './routes/aplicativos'
 import { Route as AutomacoesRouteImport } from './routes/automacoes'
+import { Route as ConfiguracoesRouteImport } from './routes/configuracoes'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as HistoricoRouteImport } from './routes/historico'
+import { Route as MinhasAutomacoesRouteImport } from './routes/minhas-automacoes'
+import { Route as TemplatesRouteImport } from './routes/templates'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AplicativosRoute = AplicativosRouteImport.update({
+  id: '/aplicativos',
+  path: '/aplicativos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AutomacoesRoute = AutomacoesRouteImport.update({
@@ -22,31 +33,105 @@ const AutomacoesRoute = AutomacoesRouteImport.update({
   path: '/automacoes',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConfiguracoesRoute = ConfiguracoesRouteImport.update({
+  id: '/configuracoes',
+  path: '/configuracoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HistoricoRoute = HistoricoRouteImport.update({
+  id: '/historico',
+  path: '/historico',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MinhasAutomacoesRoute = MinhasAutomacoesRouteImport.update({
+  id: '/minhas-automacoes',
+  path: '/minhas-automacoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplatesRoute = TemplatesRouteImport.update({
+  id: '/templates',
+  path: '/templates',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aplicativos': typeof AplicativosRoute
   '/automacoes': typeof AutomacoesRoute
+  '/configuracoes': typeof ConfiguracoesRoute
+  '/dashboard': typeof DashboardRoute
+  '/historico': typeof HistoricoRoute
+  '/minhas-automacoes': typeof MinhasAutomacoesRoute
+  '/templates': typeof TemplatesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aplicativos': typeof AplicativosRoute
   '/automacoes': typeof AutomacoesRoute
+  '/configuracoes': typeof ConfiguracoesRoute
+  '/dashboard': typeof DashboardRoute
+  '/historico': typeof HistoricoRoute
+  '/minhas-automacoes': typeof MinhasAutomacoesRoute
+  '/templates': typeof TemplatesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aplicativos': typeof AplicativosRoute
   '/automacoes': typeof AutomacoesRoute
+  '/configuracoes': typeof ConfiguracoesRoute
+  '/dashboard': typeof DashboardRoute
+  '/historico': typeof HistoricoRoute
+  '/minhas-automacoes': typeof MinhasAutomacoesRoute
+  '/templates': typeof TemplatesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/automacoes'
+  fullPaths:
+    | '/'
+    | '/aplicativos'
+    | '/automacoes'
+    | '/configuracoes'
+    | '/dashboard'
+    | '/historico'
+    | '/minhas-automacoes'
+    | '/templates'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/automacoes'
-  id: '__root__' | '/' | '/automacoes'
+  to:
+    | '/'
+    | '/aplicativos'
+    | '/automacoes'
+    | '/configuracoes'
+    | '/dashboard'
+    | '/historico'
+    | '/minhas-automacoes'
+    | '/templates'
+  id:
+    | '__root__'
+    | '/'
+    | '/aplicativos'
+    | '/automacoes'
+    | '/configuracoes'
+    | '/dashboard'
+    | '/historico'
+    | '/minhas-automacoes'
+    | '/templates'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AplicativosRoute: typeof AplicativosRoute
   AutomacoesRoute: typeof AutomacoesRoute
+  ConfiguracoesRoute: typeof ConfiguracoesRoute
+  DashboardRoute: typeof DashboardRoute
+  HistoricoRoute: typeof HistoricoRoute
+  MinhasAutomacoesRoute: typeof MinhasAutomacoesRoute
+  TemplatesRoute: typeof TemplatesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +143,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/aplicativos': {
+      id: '/aplicativos'
+      path: '/aplicativos'
+      fullPath: '/aplicativos'
+      preLoaderRoute: typeof AplicativosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/automacoes': {
       id: '/automacoes'
       path: '/automacoes'
@@ -65,12 +157,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AutomacoesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/configuracoes': {
+      id: '/configuracoes'
+      path: '/configuracoes'
+      fullPath: '/configuracoes'
+      preLoaderRoute: typeof ConfiguracoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/historico': {
+      id: '/historico'
+      path: '/historico'
+      fullPath: '/historico'
+      preLoaderRoute: typeof HistoricoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/minhas-automacoes': {
+      id: '/minhas-automacoes'
+      path: '/minhas-automacoes'
+      fullPath: '/minhas-automacoes'
+      preLoaderRoute: typeof MinhasAutomacoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/templates': {
+      id: '/templates'
+      path: '/templates'
+      fullPath: '/templates'
+      preLoaderRoute: typeof TemplatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AplicativosRoute: AplicativosRoute,
   AutomacoesRoute: AutomacoesRoute,
+  ConfiguracoesRoute: ConfiguracoesRoute,
+  DashboardRoute: DashboardRoute,
+  HistoricoRoute: HistoricoRoute,
+  MinhasAutomacoesRoute: MinhasAutomacoesRoute,
+  TemplatesRoute: TemplatesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
