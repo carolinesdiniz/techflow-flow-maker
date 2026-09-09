@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import logo from "@/assets/autoflow-logo.png.asset.json";
+import { Logo } from "@/components/app/Logo";
 
 
 const links = [
@@ -32,11 +32,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
         <a href="#topo" className="flex min-w-0 items-center" aria-label="AutoFlow">
-          <img
-            src={logo.url}
-            alt="AutoFlow"
-            className="h-10 w-auto rounded-xl bg-brand-deep px-2 py-1"
-          />
+          <Logo />
         </a>
 
 
