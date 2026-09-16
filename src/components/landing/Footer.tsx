@@ -1,5 +1,5 @@
 import { ShieldCheck, Lock, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
-import logo from "@/assets/autoflow-logo.png.asset.json";
+import { Logo } from "@/components/app/Logo";
 
 
 const columns = [
@@ -28,11 +28,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
             <div className="flex items-center">
-              <img
-                src={logo.url}
-                alt="AutoFlow"
-                className="h-10 w-auto rounded-xl bg-brand-deep px-2 py-1"
-              />
+              <Logo />
             </div>
 
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
